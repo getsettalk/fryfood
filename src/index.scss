@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+$primaryClr: #F94A3D;
+$primaryClr1: #f52011;
+$yellow: #FFCF03;
+$yellow1: #FFA701;
+$yellow2: #F5C64D;
+$muteClr: #333333;
+$muteClr1: #282C32;
+$mutedClr2: #CCCCCC;
+$litePink: #FBBEAC;
+$white: #FFFFFF;
+$white1: #E6E6E6;
+$white2: #F0F8FF;
+$lightBlue: #D1EBFF;
+$baigani: #390028;
+$baigani1: #2B001E;
+$darkGreen: #198E6D;
+$darkGreen1: #167C5C;
+$navi: #21457A;
+$navi1: #2672AB;
+$LiteNavi: #A8CFF0;
+$linerGrad1: #fcbbacab;
+$linerGrad2: #FB9275;
+$linerGrad3: "#fffcef";
+$basicRed: #FDECEC;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Default styles for all screen sizes */
+.container {
+    width: 100%;
+    /* Take up the full width of its parent */
+    padding: 0 15px;
+    /* Add some padding on the sides if needed */
+    box-sizing: border-box;
+    /* Include padding and border in the total width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    max-width: 1240px;
+    /* Default maximum width for extra large screens (xxl) */
+}
+
+/* Container class for full-width fluid layout */
+.container-fluid {
+    width: 100%;
+    /* Take up the full width of the viewport */
+    padding: 0 15px;
+    /* Add some padding on the sides if needed */
+    box-sizing: border-box;
+    /* Include padding and border in the total width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+/* Styles for screens smaller than 540px (extra small devices - mobile) */
+@media (max-width: 539px) {
+
+    .container,
+    .container-fluid {
+        max-width: 100%;
+        /* Full width for mobile screens */
+        padding: 0 5px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.d-none {
+    display: none;
+}
+
+// grid 
+// .row {
+//     display: flex;
+//     flex-wrap: wrap;
+
+// }
+
+// .col {
+//     flex: 1;
+//     padding: 15px;
+//     margin: 1px;
+// }
+
+// /* Example media queries for responsiveness */
+// @media (max-width: 768px) {
+//     .col {
+//         flex-basis: 50%;
+//         /* Two columns per row on smaller screens */
+//     }
+// }
+
+// @media (max-width: 576px) {
+//     .col {
+//         flex-basis: 100%;
+//         /* One column per row on even smaller screens */
+//     }
+// }
+
+/* Default styles for all screen sizes */
+
+/* Ensure the text is not wrapped and hides overflow */
+.text-ellipsis {
+    white-space: nowrap;
+    /* Prevent text from wrapping to the next line */
+    overflow: hidden;
+    /* Hide any overflowing text */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) for overflow text */
+    max-width: 100%;
+    /* Ensure the text doesn't overflow its container */
+}
+
+
+/* Default gap-x and gap-y classes */
+
+.gx-1 {
+    column-gap: .1rem;
+}
+
+.gx-2 {
+    column-gap: calc(2 * 0.25rem);
+}
+
+.gy-2 {
+    row-gap: 0.25rem;
+}
+
+.gy-2 {
+    row-gap: calc(2 * 0.25rem);
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+    margin: 1px;
+}
+
+/* Extra Small Devices (col) */
+.col-1 {
+    flex-basis: calc(8.33333% - 2px);
+}
+
+.col-2 {
+    flex-basis: calc(16.66667% - 2px);
+}
+
+.col-3 {
+    flex-basis: calc(25% - 2px);
+}
+
+.col-4 {
+    flex-basis: calc(33.33333% - 2px);
+}
+
+.col-5 {
+    flex-basis: calc(41.66667% - 2px);
+}
+
+.col-6 {
+    flex-basis: calc(50% - 2px);
+}
+
+.col-7 {
+    flex-basis: calc(58.33333% - 2px);
+}
+
+.col-8 {
+    flex-basis: calc(66.66667% - 2px);
+}
+
+.col-9 {
+    flex-basis: calc(75% - 2px);
+}
+
+.col-10 {
+    flex-basis: calc(83.33333% - 2px);
+}
+
+.col-11 {
+    flex-basis: calc(91.66667% - 2px);
+}
+
+.col-12 {
+    flex-basis: calc(100% - 2px);
+}
+
+/* Small Devices (col-sm) */
+@media (min-width: 576px) {
+    .col-sm-1 {
+        flex-basis: calc(8.33333% - 2px);
+    }
+
+    .col-sm-2 {
+        flex-basis: calc(16.66667% - 2px);
+    }
+
+    .col-sm-3 {
+        flex-basis: calc(25% - 2px);
+    }
+
+    .col-sm-4 {
+        flex-basis: calc(33.33333% - 2px);
+    }
+
+    .col-sm-5 {
+        flex-basis: calc(41.66667% - 2px);
+    }
+
+    .col-sm-6 {
+        flex-basis: calc(50% - 2px);
+    }
+
+    .col-sm-7 {
+        flex-basis: calc(58.33333% - 2px);
+    }
+
+    .col-sm-8 {
+        flex-basis: calc(66.66667% - 2px);
+    }
+
+    .col-sm-9 {
+        flex-basis: calc(75% - 2px);
+    }
+
+    .col-sm-10 {
+        flex-basis: calc(83.33333% - 2px);
+    }
+
+    .col-sm-11 {
+        flex-basis: calc(91.66667% - 2px);
+    }
+
+    .col-sm-12 {
+        flex-basis: calc(100% - 2px);
+    }
+}
+
+/* Medium Devices (col-md) */
+@media (min-width: 768px) {
+    .col-md-1 {
+        flex-basis: calc(8.33333% - 2px);
+    }
+
+    .col-md-2 {
+        flex-basis: calc(16.66667% - 2px);
+    }
+
+    .col-md-3 {
+        flex-basis: calc(25% - 2px);
+    }
+
+    .col-md-4 {
+        flex-basis: calc(33.33333% - 2px);
+    }
+
+    .col-md-5 {
+        flex-basis: calc(41.66667% - 2px);
+    }
+
+    .col-md-6 {
+        flex-basis: calc(50% - 2px);
+    }
+
+    .col-md-7 {
+        flex-basis: calc(58.33333% - 2px);
+    }
+
+    .col-md-8 {
+        flex-basis: calc(66.66667% - 2px);
+    }
+
+    .col-md-9 {
+        flex-basis: calc(75% - 2px);
+    }
+
+    .col-md-10 {
+        flex-basis: calc(83.33333% - 2px);
+    }
+
+    .col-md-11 {
+        flex-basis: calc(91.66667% - 2px);
+    }
+
+    .col-md-12 {
+        flex-basis: calc(100% - 2px);
+    }
+}
+
+/* Large Devices (col-lg) */
+@media (min-width: 992px) {
+    .col-lg-1 {
+        flex-basis: calc(8.33333% - 2px);
+    }
+
+    .col-lg-2 {
+        flex-basis: calc(16.66667% - 2px);
+    }
+
+    .col-lg-3 {
+        flex-basis: calc(25% - 2px);
+    }
+
+    .col-lg-4 {
+        flex-basis: calc(33.33333% - 2px);
+    }
+
+    .col-lg-5 {
+        flex-basis: calc(41.66667% - 2px);
+    }
+
+    .col-lg-6 {
+        flex-basis: calc(50% - 2px);
+    }
+
+    .col-lg-7 {
+        flex-basis: calc(58.33333% - 2px);
+    }
+
+    .col-lg-8 {
+        flex-basis: calc(66.66667% - 2px);
+    }
+
+    .col-lg-9 {
+        flex-basis: calc(75% - 2px);
+    }
+
+    .col-lg-10 {
+        flex-basis: calc(83.33333% - 2px);
+    }
+
+    .col-lg-11 {
+        flex-basis: calc(91.66667% - 2px);
+    }
+
+    .col-lg-12 {
+        flex-basis: calc(100% - 2px);
+    }
+}
+
+/* Extra Large Devices (col-xl) */
+@media (min-width: 1200px) {
+    .col-xl-1 {
+        flex-basis: calc(8.33333% - 2px);
+    }
+
+    .col-xl-2 {
+        flex-basis: calc(16.66667% - 2px);
+    }
+
+    .col-xl-3 {
+        flex-basis: calc(25% - 2px);
+    }
+
+    .col-xl-4 {
+        flex-basis: calc(33.33333% - 2px);
+    }
+
+    .col-xl-5 {
+        flex-basis: calc(41.66667% - 2px);
+    }
+
+    .col-xl-6 {
+        flex-basis: calc(50% - 2px);
+    }
+
+    .col-xl-7 {
+        flex-basis: calc(58.33333% - 2px);
+    }
+
+    .col-xl-8 {
+        flex-basis: calc(66.66667% - 2px);
+    }
+
+    .col-xl-9 {
+        flex-basis: calc(75% - 2px);
+    }
+
+    .col-xl-10 {
+        flex-basis: calc(83.33333% - 2px);
+    }
+
+    .col-xl-11 {
+        flex-basis: calc(91.66667% - 2px);
+    }
+
+    .col-xl-12 {
+        flex-basis: calc(100% - 2px);
+    }
+}
+
+// flex direction
+
+/* Default flex-direction classes */
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* Responsive flex-direction classes */
+/* Small Devices (flex-sm) */
+@media (min-width: 576px) {
+    .flex-sm-row {
+        flex-direction: row;
+    }
+
+    .flex-sm-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    .flex-sm-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Medium Devices (flex-md) */
+@media (min-width: 768px) {
+    .flex-md-row {
+        flex-direction: row;
+    }
+
+    .flex-md-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .flex-md-column {
+        flex-direction: column;
+    }
+
+    .flex-md-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Large Devices (flex-lg) */
+@media (min-width: 992px) {
+    .flex-lg-row {
+        flex-direction: row;
+    }
+
+    .flex-lg-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .flex-lg-column {
+        flex-direction: column;
+    }
+
+    .flex-lg-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Extra Large Devices (flex-xl) */
+@media (min-width: 1200px) {
+    .flex-xl-row {
+        flex-direction: row;
+    }
+
+    .flex-xl-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .flex-xl-column {
+        flex-direction: column;
+    }
+
+    .flex-xl-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+/* XX-Large Devices (flex-xxl) */
+@media (min-width: 1400px) {
+    .flex-xxl-row {
+        flex-direction: row;
+    }
+
+    .flex-xxl-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .flex-xxl-column {
+        flex-direction: column;
+    }
+
+    .flex-xxl-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+// flex 
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+// --- card 
+.card {
+    position: relative;
+    border: 1px solid $white1;
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 3px 5px;
+}
+
+.para {
+    color: $muteClr1;
+}

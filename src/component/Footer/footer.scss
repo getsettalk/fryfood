@@ -1,0 +1,56 @@
+@import "../../index.scss";
+@import "../../mixins/mixinis.scss";
+
+footer {
+
+    .footerMain {
+        background-color: $basicRed;
+        padding: 1.3rem 0.3rem;
+
+        @include md {
+            padding: 1rem 1.3rem;
+        }
+
+        .row {
+            column-gap: 2px;
+            row-gap: 1rem;
+
+            .footerMain {
+                font-weight: 700;
+                letter-spacing: 0.6px;
+                font-size: 1.23rem;
+            }
+
+            ul {
+                list-style: none;
+                margin-left: 1rem;
+
+                li {
+                    color: $muteClr1;
+                    font-size: 0.94rem;
+                }
+            }
+        }
+
+
+    }
+
+    .footerSec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $primaryClr;
+        padding: 0.5rem 0.3rem;
+        font-size: 15px;
+
+        p {
+            color: $white;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+        }
+    }
+}

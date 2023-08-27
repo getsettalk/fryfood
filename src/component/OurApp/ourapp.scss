@@ -1,0 +1,11 @@
+@import "../../index.scss";
+@import "../../mixins/mixinis.scss";
+
+.ourApp {
+    // background: $mutedClr2;
+    padding-top: 1.3rem;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

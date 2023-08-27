@@ -1,0 +1,73 @@
+@import "../../index.scss";
+@import "../../mixins/mixinis.scss";
+
+.ProductData {
+    margin-top: 1rem;
+
+    .row {
+        row-gap: 15px;
+
+        .card {
+            max-width: 200px;
+            border: none;
+            transition: 0.3s;
+            cursor: pointer;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+            &:hover {
+                box-shadow: $primaryClr 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            }
+
+            .card-body {
+                // padding: 0%;
+
+                .card-image {
+                    position: relative;
+                    // background-color: rgb(30, 255, 0);
+                    width: auto;
+                    height: 150px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .productName {
+                    font-size: 1.12rem;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+
+                .actionBox {
+                    p {
+                        color: $muteClr;
+                        font-size: 0.84rem;
+                    }
+
+                    button {
+                        background-color: $primaryClr;
+                        padding: .238rem;
+                        border-radius: 50%;
+                        color: $white;
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        outline: none;
+                        cursor: pointer;
+                        border: none;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+                        &:hover {
+                            background-color: $muteClr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .notFound {
+        color: $mutedClr2;
+    }
+}

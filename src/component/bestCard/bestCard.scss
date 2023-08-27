@@ -1,0 +1,50 @@
+@import "../../index.scss";
+
+.spefication {
+    .row {
+        .col {
+          
+            .card {
+                border: none;
+                width: 90%;
+                border-radius: 1rem;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 50%;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    border-radius: 1rem;
+                    transition: 0.3s;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                }
+
+                &:hover::after {
+                    box-shadow: $yellow1 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                }
+
+                .card-image {
+                    transform: translateY(20px);
+                    z-index: 100;
+
+                    img {
+                        width: 90px;
+
+                    }
+                }
+
+                .card-body {
+                    // background-color: blueviolet;
+                    position: relative;
+                    width: 100%;
+                    height: 100px;
+                    padding: 0.4rem 0.53rem;
+
+                }
+            }
+        }
+    }
+}
