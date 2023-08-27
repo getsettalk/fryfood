@@ -30,7 +30,7 @@ const Product = ({ AllProductData }) => {
               <div className="card">
                 <div className="card-body d-flex justify-content-center align-items-center flex-column">
                   <div className="card-image">
-                    <img src={`${baseUrl}/src/${item?.image}`} alt="product Image" />
+                    <img src={item?.image} alt="product Image" />
                   </div>
                   <div className="stars"> <StarRating rating={item.rating} /></div>
                   <div className="productName text-ellipsis">{item.pname}</div>

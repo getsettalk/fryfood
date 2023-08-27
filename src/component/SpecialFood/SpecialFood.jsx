@@ -17,15 +17,15 @@ const SpecialFood = () => {
     ]
 
     const AllProductData = [
-        { id: 1, pname: "Crispy Fried Chicken", image: "assets/images/friyed-chicken.svg", category: "Chicken", status: true, rating: 2, price: 150 },
-        { id: 2, pname: "Burger", image: "assets/images/burger.svg", category: "Fast Food", status: true, rating: 5, price: 120 },
-        { id: 3, pname: "Spicy Noodles", image: "assets/images/packDish.svg", category: "Fast Food", status: true, rating: 4, price: 560 },
-        { id: 4, pname: "Crispy Kurkure", image: "assets/images/kfc.svg", category: "Fast Food", status: true, rating: 3, price: 250 },
-        { id: 5, pname: "Special Chicken", image: "assets/images/fChicken2.svg", category: "Chicken", status: true, rating: 5, price: 350 },
-        { id: 6, pname: "Chicken Leg", image: "assets/images/chickenLeg.svg", category: "Chicken", status: true, rating: 3, price: 550 },
-        { id: 7, pname: "Special Salad", image: "assets/images/salad.svg", category: "Salad", status: true, rating: 5, price: 150 },
-        { id: 8, pname: "Salad", image: "assets/images/salad 2.svg", category: "Salad", status: true, rating: 3, price: 100 },
-        { id: 9, pname: "Dessert", image: "assets/images/desert.svg", category: "Dessert", status: true, rating: 5, price: 2400 },
+        { id: 1, pname: "Crispy Fried Chicken", image: "images/friyed-chicken.svg", category: "Chicken", status: true, rating: 2, price: 150 },
+        { id: 2, pname: "Burger", image: "images/burger.svg", category: "Fast Food", status: true, rating: 5, price: 120 },
+        { id: 3, pname: "Spicy Noodles", image: "images/packDish.svg", category: "Fast Food", status: true, rating: 4, price: 560 },
+        { id: 4, pname: "Crispy Kurkure", image: "images/kfc.svg", category: "Fast Food", status: true, rating: 3, price: 250 },
+        { id: 5, pname: "Special Chicken", image: "images/fChicken2.svg", category: "Chicken", status: true, rating: 5, price: 350 },
+        { id: 6, pname: "Chicken Leg", image: "images/chickenLeg.svg", category: "Chicken", status: true, rating: 3, price: 550 },
+        { id: 7, pname: "Special Salad", image: "images/salad.svg", category: "Salad", status: true, rating: 5, price: 150 },
+        { id: 8, pname: "Salad", image: "images/salad 2.svg", category: "Salad", status: true, rating: 3, price: 100 },
+        { id: 9, pname: "Dessert", image: "images/desert.svg", category: "Dessert", status: true, rating: 5, price: 2400 },
     ]
 
     function FilterProduct(id, category) {
